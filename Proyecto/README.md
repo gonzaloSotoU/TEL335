@@ -9,9 +9,13 @@ Clonar este repositorio en una carpeta
 Entrar a la carpeta donde fue clonado el proyecto y correr el siguiente comando
 
 ```bash
-docker compose up -d
+docker-compose up --build
 ```
 
+Para eliminar los contenedores
+```bash
+docker-compose down
+```
 
 ## Usage
 
@@ -21,3 +25,10 @@ Los puertos utilizados son:
 mongoDB: 27017
 React: 3000
 node-api: 5000
+
+```bash
+Para entrar a mongoDB via terminal se debe correr:
+docker exec -it mongo-db bash
+mongosh
+show dbs
+```
