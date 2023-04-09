@@ -32,3 +32,9 @@ docker exec -it mongo-db bash
 mongosh
 show dbs
 ```
+
+## Integrantes
+Agustin Ovando Saenz
+Sebastian Jara Palomino
+Juan de Dios Larrea
+Gonzalo Soto Ulloa
