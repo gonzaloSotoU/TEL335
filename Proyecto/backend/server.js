@@ -5,9 +5,9 @@ const morgan = require("morgan");
 const tasksRoute = require("./routes/tasks");
 
 mongoose
-  .connect("mongob://mongo-db:27017/ToDoAppDb")
+  .connect("mongodb://mongo-db:27017/app-web")
   .then(() => console.log("Connected"))
-  .catch(() => console.log("Not connected"));
+  .catch(() => console.log("Not connected on DB"));
 
 const app = express();
 
@@ -18,3 +18,4 @@ app.use(morgan());
 app.use(tasksRoute);
 
 app.listen(5000, console.log("Running on 5000"));
+
